@@ -1,0 +1,42 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page25669550.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^header$ page25673426.html [NC]
+RewriteRule ^header/$ page25673426.html [NC]
+
+RewriteRule ^footer$ page25739714.html [NC]
+RewriteRule ^footer/$ page25739714.html [NC]
+
+RewriteRule ^contacts$ page25856263.html [NC]
+RewriteRule ^contacts/$ page25856263.html [NC]
+
+RewriteRule ^spivpratsya$ page25856646.html [NC]
+RewriteRule ^spivpratsya/$ page25856646.html [NC]
+
+RewriteRule ^reviews$ page25857129.html [NC]
+RewriteRule ^reviews/$ page25857129.html [NC]
+
+RewriteRule ^zapravka$ page25868922.html [NC]
+RewriteRule ^zapravka/$ page25868922.html [NC]
+
+RewriteRule ^chystka$ page25869727.html [NC]
+RewriteRule ^chystka/$ page25869727.html [NC]
+
+RewriteRule ^demontazh$ page25870923.html [NC]
+RewriteRule ^demontazh/$ page25870923.html [NC]
+
+RewriteRule ^zakladka$ page25872343.html [NC]
+RewriteRule ^zakladka/$ page25872343.html [NC]
+
+RewriteRule ^montazh$ page25873899.html [NC]
+RewriteRule ^montazh/$ page25873899.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/img/tildafavicon.ico [R=302,L]
+
